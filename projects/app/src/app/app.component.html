@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <a mat-button routerLink="/" routerLinkActive="active">App</a>
+</mat-toolbar>
+<div class="container">
+  <b-navigation [menu]="menu" />
+  <div>
+    <b-breadcrumb
+      [class.margin]="breadcrumbParts().length"
+      [parts]="breadcrumbParts()"
+    />
+    <router-outlet />
+  </div>
+</div>

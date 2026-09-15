@@ -1,0 +1,48 @@
+{
+  "name": "formly-designer",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint",
+    "file-service": "node projects/formly-designer/local-file-service.js projects/app/src/app/forms 4202",
+    "formly-designer": "ng serve formly-designer",
+    "designer": "run-p file-service formly-designer"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/cdk": "^21.2.14",
+    "@angular/common": "~21.2.18",
+    "@angular/compiler": "~21.2.18",
+    "@angular/core": "~21.2.18",
+    "@angular/forms": "^21.2.18",
+    "@angular/material": "^21.2.14",
+    "@angular/platform-browser": "~21.2.18",
+    "@angular/platform-browser-dynamic": "~21.2.18",
+    "@angular/router": "~21.2.18",
+    "@grumptech/ngx-basic-ui": "^1.0.8",
+    "@grumptech/ngx-formly-designer": "^1.0.5",
+    "@grumptech/ngx-formly-form-loaders": "^1.0.2",
+    "@grumptech/ngx-formly-ui-material": "^1.0.0",
+    "@grumptech/ngx-formly-ui-editor": "^1.0.3",
+    "@ngx-formly/core": "7.1.0",
+    "@ngx-formly/material": "7.1.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/schematics-cli": "^21.2.19",
+    "@angular-eslint/builder": "21.4.0",
+    "@angular-eslint/eslint-plugin": "21.4.0",
+    "@angular-eslint/eslint-plugin-template": "21.4.0",
+    "@angular-eslint/schematics": "21.4.0",
+    "@angular-eslint/template-parser": "21.4.0",
+    "@angular/build": "^21.2.19",
+    "@angular/cli": "~21.2.19",
+    "@angular/compiler-cli": "~21.2.18",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.9.5",
+    "typescript": "~5.9.3"
+  }
+}

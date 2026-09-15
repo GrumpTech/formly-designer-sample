@@ -1,0 +1,38 @@
+@use "@grumptech/ngx-basic-ui/thin-scrollbars";
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-toolbar {
+  a {
+    margin-right: 5px;
+
+    &.home {
+      margin-right: 30px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: row;
+}
+
+b-navigation {
+  width: 250px;
+  border-right: 1px solid silver;
+}
+
+b-breadcrumb {
+  margin: 20px;
+}
+
+.active {
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "fieldGroup": [
+      {
+        "key": "leftSidebar",
+        "type": "app-navigation"
+      },
+      {
+        "key": "header",
+        "type": "app-breadcrumb"
+      }
+    ],
+    "props": {
+      "menu": [
+        {
+          "children": [],
+          "name": "First page",
+          "url": "first-page"
+        },
+        {
+          "children": [],
+          "name": "Custom page",
+          "url": "custom-page"
+        }
+      ],
+      "pages": [
+        {
+          "url": "first-page"
+        }
+      ]
+    },
+    "type": "app"
+  }
+]

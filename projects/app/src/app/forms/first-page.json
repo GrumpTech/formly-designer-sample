@@ -1,0 +1,14 @@
+[
+  {
+    "fieldGroup": [
+      {
+        "key": "body",
+        "props": {
+          "message": "Create a form or import an OpenAPI specification..."
+        },
+        "type": "custom-type"
+      }
+    ],
+    "type": "page"
+  }
+]
