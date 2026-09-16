@@ -2,7 +2,7 @@
 
 This repository demonstrates a new approach to frontend development. Instead of building an entire frontend from code, you can generate an application from an OpenAPI specification or build and modify it using a visual editor.
 
-As a developer, you focus on building and maintaining reusable components. The visual editor makes it easy to assemble and configure those components into a complete frontend, significantly reducing the amount of UI code you need to write.
+As a developer, you focus on building and maintaining reusable components. The [visual editor](https://grumptech.github.io/demos/formly-designer) makes it easy to assemble and configure those components into a complete frontend, significantly reducing the amount of UI code you need to write.
 
 ## Getting started
 
@@ -20,7 +20,7 @@ npm run designer
 
 to launch the visual designer.
 
-The [designer](/projects/formly-designer) is a lightweight wrapper application around the [Formly Designer](https://grumptech.github.io/products/formly-designer/) library. When the designer starts, it also launches a small [local file service](/projects/formly-designer/local-file-service.js) that stores the [forms](/projects/app/src/app/forms) used by the demo application.
+The [designer](/projects/formly-designer) is a lightweight wrapper application around the [Formly Designer](https://grumptech.github.io/products/formly-designer/) libraries. When the designer starts, it also launches a small [local file service](/projects/formly-designer/local-file-service.js) that stores the [forms](/projects/app/src/app/forms) used by the sample application.
 
 ### Generate a frontend from an OpenApi specification
 
