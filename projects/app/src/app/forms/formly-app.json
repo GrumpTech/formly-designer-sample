@@ -1,15 +1,6 @@
 [
   {
-    "fieldGroup": [
-      {
-        "key": "leftSidebar",
-        "type": "app-navigation"
-      },
-      {
-        "key": "header",
-        "type": "app-breadcrumb"
-      }
-    ],
+    "fieldGroup": [],
     "props": {
       "menu": [
         {
