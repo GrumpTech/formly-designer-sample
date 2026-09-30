@@ -4,16 +4,15 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { provideFormlyCore } from '@ngx-formly/core';
-import { provideFormlyDesigner } from '@grumptech/ngx-formly-designer';
+import { provideFormlyDesigner } from '@grumptech/ngx-formly-designer/designer';
+import { MessageService } from '@grumptech/ngx-formly-ui-material/core';
+import { withFormlyUiMaterial } from '@grumptech/ngx-formly-ui-material';
+import { provideFormlyAppConfig } from '@grumptech/ngx-formly-ui-base/core';
 import { designerConfig } from './config/designer-config';
-import {
-  MessageService,
-  withFormlyUiMaterial,
-} from '@grumptech/ngx-formly-ui-material';
-import { provideFormlyAppConfig } from '@grumptech/ngx-formly-ui-base';
 import { routes } from './app.routes';
 import { CustomErrorMessage } from '../../../app/src/app/types/custom-app-error/custom-error-message.type';
 import { CustomType } from '../../../app/src/app/types/custom-type/custom-type.type';
+import { EmptyFormLoader } from '@grumptech/ngx-formly-ui-base/loaders';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -42,6 +41,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideFormlyAppConfig({
       baseUrl: '/api',
+      formLoader: EmptyFormLoader,
       frontendBaseUrl: '',
       messageService: MessageService,
     }),

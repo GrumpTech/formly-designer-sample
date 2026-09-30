@@ -7,7 +7,7 @@ import {
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatButton } from '@angular/material/button';
-import { AppService } from '@grumptech/ngx-formly-ui-base';
+import { AppService } from '@grumptech/ngx-formly-ui-base/app';
 import { MenuItem, Navigation } from '@grumptech/ngx-basic-ui/navigation';
 import { Breadcrumb, BreadcrumbPart } from '@grumptech/ngx-basic-ui/breadcrumb';
 import formlyApp from './forms/formly-app.json';

@@ -1,5 +1,5 @@
 import { Route } from '@angular/router';
-import { PageLoader } from '@grumptech/ngx-formly-ui-base';
+import { PageLoader } from '@grumptech/ngx-formly-ui-base/loaders';
 import { CustomPage } from './pages/custom-page/custom-page.component';
 
 export const routes: Route[] = [
